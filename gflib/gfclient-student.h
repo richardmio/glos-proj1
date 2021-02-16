@@ -6,5 +6,14 @@
  
  #include "gfclient.h"
  #include "gf-student.h"
+
+ struct response {
+     gfstatus_t gfStatus;
+     size_t fileLen;
+     size_t bytesRecieved;
+ }
+
+// the personal method to wrap call to server socket code
+ response gfc_callServer(gfcrequest_t **gfr);
  
  #endif // __GF_CLIENT_STUDENT_H__

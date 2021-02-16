@@ -16,4 +16,7 @@
 #include <netinet/in.h>
 #include <sys/stat.h>
 
+char SAMPLE_REQUEST_STR[] = "GETFILE GET /path/to/file.pdf\r\n\r\n";
+char SAMPLE_RESPONSE_STR[] = "GETFILE OK 107528\r\n\r\n%PDF-12345";
+
  #endif // __GF_STUDENT_H__
